@@ -1,0 +1,17 @@
+server:
+  port: 5005
+  ssl:
+    key-store-type: PKCS12
+    key-store: classpath:keystore/testkeystore.p12
+    key-store-password: password
+
+org:
+  simpleLogger:
+    showDateTime: true
+
+aws:
+  accessKey: ACCESS_KEY
+  secretKey: SECRET_KEY
+  region: eu-west-2
+  endpoint: http://localstack:4566
+
