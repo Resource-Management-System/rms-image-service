@@ -22,6 +22,7 @@
         <commons.version>2.8.0</commons.version>
 
         <!-- testing -->
+        <spring.test.version>2.4.2</spring.test.version>
         <junit.version>5.7.0</junit.version>
         <mockito.version>3.6.28</mockito.version>
         <jupiter.sf.provider.version>1.3.2</jupiter.sf.provider.version>
@@ -46,6 +47,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <version>${spring.test.version}</version>
+        </dependency>
+
 
         <dependency>
             <groupId>com.amazonaws</groupId>

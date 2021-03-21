@@ -40,7 +40,8 @@ public class ImageService {
             metadata.setCacheControl("public, max-age=31536000");
 
             s3Client.putObject("account", accountId, imageAsInputStream, metadata);
-
+            
+            
         } catch (AmazonServiceException e) {
             log.error("Error from AWS processing the request");
             throw new ServiceException("Error from AWS processing the request");
